@@ -13,7 +13,7 @@
                 <!-- %logger{36} 表示 Logger 名字最长36个字符 -->
                 <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
                 <!-- 定义日志存储的路径，不要配置相对路径 -->
-                <property name="FILE_PATH" value="F:\temp_logs" />
+                <property name="FILE_PATH" value="C:\temp_logs" />
                 <property name="FILE_NAME" value="logFileName" />
             </Properties>
         </profile>
@@ -24,7 +24,7 @@
                 <!-- %logger{36} 表示 Logger 名字最长36个字符 -->
                 <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
                 <!-- 定义日志存储的路径，不要配置相对路径 -->
-                <property name="FILE_PATH" value="F:\temp_logs" />
+                <property name="FILE_PATH" value="C:\temp_logs" />
                 <property name="FILE_NAME" value="logFileName" />
             </Properties>
         </profile>
@@ -34,7 +34,7 @@
         <!-- %logger{36} 表示 Logger 名字最长36个字符 -->
         <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
         <!-- 定义日志存储的路径，不要配置相对路径 -->
-        <property name="FILE_PATH" value="F:\temp_logs" />
+        <property name="FILE_PATH" value="C:\temp_logs" />
         <property name="FILE_NAME" value="logFileName" />
     </Properties>
 
@@ -116,7 +116,7 @@
         </logger>-->
         <!--监控系统信息-->
         <!--若是additivity设为false，则 子Logger 只会在自己的appender里输出，而不会在 父Logger 的appender里输出。-->
-        <Logger name="org.springframework" level="OFF" additivity="false">
+        <Logger name="org.springframework" level="info" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
 
