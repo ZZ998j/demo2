@@ -23,13 +23,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable();
     }
 
-    /*@Autowired
+    @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
                 .withUser("user").password("password").roles("USER");
-    }*/
+    }
 
-    @Override
+    /*@Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
 
         auth
@@ -37,6 +37,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser("admin").password("123456").roles("USER")
                 .and()
                 .withUser("test").password("test123").roles("ADMIN");
-    }
+    }*/
 
 }
