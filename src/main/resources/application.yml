@@ -31,7 +31,26 @@ spring:
       pool-prepared-statements: true
       max-open-prepared-statements: 50
       max-pool-prepared-statement-per-connection-size: 20
-
+  redis:
+    database: 0
+    #    host:  192.168.91.3
+    #   port:  6379
+    #    password:  123
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 10000
+    cluster:
+      nodes:
+        - 20.48.5.5:6379
+        - 20.48.5.5:6380
+        - 20.48.5.5:6381
+        - 20.48.5.5:6382
+        - 20.48.5.5:6383
+        - 20.48.5.5:6384
 # Mybatis config
 mybatis:
   mapper-locations: classpath:mapping/*.xml
@@ -74,3 +93,4 @@ logging:
 #    org.springfromework.web: info
 #    org.mybatis: error
 #    com.example.demo2.dao: info
+
