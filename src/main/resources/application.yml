@@ -53,7 +53,7 @@ spring:
         - 20.48.5.5:6384
 # Mybatis config
 mybatis:
-  mapper-locations: classpath:mapping/*.xml
+#  mapper-locations: classpath:mapping/*.xml
   #实体扫描，多个package用逗号或者分号分隔
   type-aliases-package: com.example.demo2.model
   global-config:
@@ -89,8 +89,8 @@ logging:
   #配置日志文件路径
 #  file: @filepath.log4j2@\log@maven.build.timestamp.format@.log
   config: classpath:properties/spring-log4j2.xml
-#  level:
+  level:
 #    org.springfromework.web: info
 #    org.mybatis: error
-#    com.example.demo2.dao: info
+    com.example.demo2: debug
 
