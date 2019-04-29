@@ -77,7 +77,7 @@ mybatis:
     #自定义SQL注入器
     # sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
   configuration:
-    map-underscore-to-camel-case: true
+#    map-underscore-to-camel-case: true
     cache-enabled: false
     call-setters-on-nulls: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
