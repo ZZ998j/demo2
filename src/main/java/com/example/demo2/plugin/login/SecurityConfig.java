@@ -1,3 +1,4 @@
+/*
 package com.example.demo2.plugin.login;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,20 +17,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         // TODO Auto-generated method stub
         //super.configure(http);
-       /* http.formLogin().loginPage("/login").loginProcessingUrl("/login/form").failureUrl("/login-error").permitAll()  //表单登录，permitAll()表示这个不需要验证 登录页面，登录失败页面
+       */
+/* http.formLogin().loginPage("/login").loginProcessingUrl("/login/form").failureUrl("/login-error").permitAll()  //表单登录，permitAll()表示这个不需要验证 登录页面，登录失败页面
                 .and()
                 .authorizeRequests().anyRequest().authenticated()
                 .and()
-                .csrf().disable();*/
+                .csrf().disable();*//*
+
     }
 
-    /*@Autowired
+    */
+/*@Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
                 .withUser("user").password("password").roles("USER");
-    }*/
+    }*//*
 
-    /*@Override
+
+    */
+/*@Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
 
         auth
@@ -37,6 +43,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser("admin").password("123456").roles("USER")
                 .and()
                 .withUser("test").password("test123").roles("ADMIN");
-    }*/
+    }*//*
+
 
 }
+*/
