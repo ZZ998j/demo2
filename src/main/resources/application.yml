@@ -2,7 +2,7 @@
 server:
   port: 9969
   servlet:
-    context-path: /testgqdb
+    context-path: /
 
 # Spring Datasource Settings
 spring:
@@ -45,12 +45,12 @@ spring:
     timeout: 10000
     cluster:
       nodes:
-        - 20.48.5.5:6379
-        - 20.48.5.5:6380
-        - 20.48.5.5:6381
-        - 20.48.5.5:6382
-        - 20.48.5.5:6383
-        - 20.48.5.5:6384
+        - 20.48.5.4:7001
+        - 20.48.5.5:7002
+        - 20.48.5.6:7003
+        - 20.48.5.7:7004
+        - 20.48.5.8:7005
+        - 20.48.5.9:7006
 # Mybatis config
 mybatis:
 #  mapper-locations: classpath:mapping/*.xml

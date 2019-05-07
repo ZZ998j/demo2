@@ -174,7 +174,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <driver.class.name>com.mysql.cj.jdbc.Driver</driver.class.name>
-        <db.mysql.database>jdbc:mysql://20.48.5.5:4407/testgqdb?useUnicode=true&amp;characterEncoding=UTF-8</db.mysql.database>
+        <db.mysql.database>jdbc:mysql://20.48.5.5:4407/leyou?useUnicode=true&amp;characterEncoding=UTF-8</db.mysql.database>
         <db.mysql.username>root</db.mysql.username>
         <db.mysql.password>123456</db.mysql.password>
         <filepath.log4j2>F:\temp_logs</filepath.log4j2>

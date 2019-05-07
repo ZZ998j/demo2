@@ -31,7 +31,7 @@ public class UserController  {
     public User getUserInfo(){
 //        logger.info("fff1");
         log.info("hhhddd");
-        return userService.getUserById("T");
+        return userService.getUserById("2");
     }
 
 
